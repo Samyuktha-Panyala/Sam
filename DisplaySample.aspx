@@ -4,8 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+<<<<<<< HEAD
     <title></title>
 
+=======
+    <title>Added by Praneeth</title>
+>>>>>>> origin/master
 </head>
 
 
