@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    
+    <asp:TextBox/>
         <asp:Label ID="lblDisplay" runat="server" Text="" Font-Size="Large"></asp:Label></div>
     </form>
 </body>
