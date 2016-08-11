@@ -4,8 +4,22 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+<<<<<<< HEAD
     <title>welcome to git hub</title>
 </head>
+=======
+
+    <title>Added by Praneeth</title>
+<h1>Samyuktha</h1>
+
+</head>
+
+
+
+
+
+
+>>>>>>> origin/master
 <body>
     <form id="form1" runat="server">
     <div>

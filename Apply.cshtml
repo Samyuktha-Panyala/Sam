@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "Apply";
+}
+
+
+
+@using (Html.BeginForm())
+{
+
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <h2>Apply</h2>
+        <div class="form-control">
+            @Html.Label("EmployeeId", "EmployeeId")
+
+            @Html.TextBox("tbEmployeeId", null)
+        </div>
+        <div class="form-control">
+            @Html.Label("EmployeeName", "EmployeeName")
+
+            @Html.TextBox("tbEmployeeName", null)
+        </div>
+        <div class="form-control">
+            @Html.Label("StartingDate", "StartingDate")
+
+            @*@Html.TextBox("tbStartingDate",new { id = "datepicker"})*@
+            @*@Html.TextBox("tbStartingDate", null)*@
+            <input type="date" name="tbStartingDate" />
+        </div>
+        <div class="form-control">
+            @Html.Label("EndDate", "EndDate")
+
+            @*@Html.TextBox("tbEndDate", null)*@
+            <input type="date" name="tbEndDate" />
+        </div>
+        <div class="form-group">
+            @Html.Label("TypeofLeave", "TypeofLeave")
+           
+                @Html.DropDownList("typeofLeave", new List<SelectListItem>
+          {
+          new  SelectListItem{Text="SickLeave" , Value="SickLeave"},
+          new  SelectListItem{Text="CausualLeave" , Value="CausualLeave"},
+          new  SelectListItem{Text="SpecialLeave" , Value="SpecialLeave"},
+           new  SelectListItem{Text="OtherLeave" , Value="OtherLeave"},
+          
+          }, " ", new { style = "width:313px;height:30px;" })
+            </div>
+        
+
+        <div class="form-control">
+            <input type="submit" value="Login" id="btnSubmit" onclick="">
+        </div>
+
+        @*<script>
+        $(document).ready(function () { $('.date').datepicker({ dateFormat: "dd/mm/yy" }); });
+        </script>*@
+
+    </fieldset>
+}
+
